@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Post</title>
+    <link rel="stylesheet" href="update-post.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Update Post</h1>
+      <form id="update-post-form">
+        <label for="post-title">Title:</label>
+        <input
+          type="text"
+          id="post-title"
+          name="title"
+          placeholder="Enter post title"
+          required
+        />
+
+        <label for="post-body">Body:</label>
+        <textarea
+          id="post-body"
+          name="body"
+          placeholder="Enter post content"
+          required
+        ></textarea>
+
+        <button type="submit" class="button button--success">
+          Update Post
+        </button>
+      </form>
+    </div>
+    <script src="./update-post.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+/* Genel Stil */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Başlık Stil */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Butonlar */
+.button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.button--success {
+  background-color: #28a745;
+}
+
+.button--success:hover {
+  background-color: #218838;
+}
+
+.button--primary {
+  background-color: #007bff;
+}
+
+.button--primary:hover {
+  background-color: #0056b3;
+}
+
+.posts-container {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.posts-container li {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.posts-container li:hover {
+  background-color: #f8f9fa;
+}
+
+/* Media Query ile duyarlı tasarım */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .button {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .posts-container li {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .posts-container li {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 8px 10px;
+  }
+
+  .posts-container li {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+}

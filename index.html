@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Post Management System</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <button id="fetch-posts" class="button button--success">
+          Fetch all posts
+        </button>
+        <button id="create-post" class="button button--primary">
+          Create a new post
+        </button>
+      </section>
+
+      <ul id="posts-container" aria-live="polite"></ul>
+    </main>
+
+    <footer class="container">
+      <p>&copy; 2025 Post Manager</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
